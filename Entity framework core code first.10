@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace QuanLyThuVien
 {
-    // ==========================================
-    // 1. CÁC LỚP THỰC THỂ (ENTITY CLASSES)
-    // ==========================================
+  
 
     [Table("DocGia")]
     public class DocGia
@@ -50,9 +48,6 @@ namespace QuanLyThuVien
         public virtual DocGia? DocGia { get; set; }
     }
 
-    // ==========================================
-    // 2. LỚP CONTEXT (QLTVDBContext)
-    // ==========================================
 
     public class QLTVDBContext : DbContext
     {
@@ -88,9 +83,7 @@ namespace QuanLyThuVien
         }
     }
 
-    // ==========================================
-    // 3. CHƯƠNG TRÌNH CHÍNH (PROGRAM)
-    // ==========================================
+    
 
     public class Program
     {
